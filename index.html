@@ -5,23 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <dialog class="form-modal">
             <form action="" method="dialog">
                 <h3>Complete the following areas</h3>
-                <label for="modal-title">Title:</label>
-                <input type="text" id="modal-title" required>
+                <div class="title">
+                    <label for="modal-title">Title:</label>
+                    <input type="text" id="modal-title" required>
+                </div>
 
-                <label for="modal-author">Author:</label>
-                <input type="text" id="modal-author" required>
+                <div class="author">
+                    <label for="modal-author">Author:</label>
+                    <input type="text" id="modal-author" required>
+                </div>
 
-                <label for="modal-pages">Pages:</label>
-                <input type="number" name="modal-pages" id="modal-pages">
+                <div class="pages">
+                    <label for="modal-pages">Pages:</label>
+                    <input type="number" name="modal-pages" id="modal-pages">
+                </div>
 
-                <label for="book-status">Read?</label>
-                <input type="checkbox" name="book-status" id="book-status">
+                <div class="book-status">
+                    <label for="book-status">Read?</label>
+                    <input type="checkbox" name="book-status" id="book-status">
+                </div>
 
                 <div class="modal-buttons">
                     <button id="cancel-button">Cancel</button>
@@ -30,7 +43,14 @@
             </form>
         </dialog>
         <header>
-            <h1>My Library</h1>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z" />
+                </svg>
+                <h1>My Library</h1>
+            </div>
             <button id="add-book">ADD BOOK</button>
         </header>
         <div class="card"></div>

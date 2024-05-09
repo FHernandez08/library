@@ -7,6 +7,8 @@ const titleInput = document.querySelector('#modal-title');
 const authorInput = document.querySelector('#modal-author');
 const pagesInput = document.querySelector('#modal-pages');
 const bookInput = document.querySelector('#book-status');
+const libraryCard = document.querySelector('.card');
+const library = document.querySelector('.container');
 
 
 // the constructor for the book
@@ -17,17 +19,20 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+// function to change the read status on the card
+
+
 const myLibrary = [];
 
 // function created to add book to the myLibrary variable
 // creates the new book and pushes it into the array
 function addBookToLibrary() {
-    title = titleInput.value;
-    author = authorInput.value;
-    pages = pagesInput.value;
-    read = bookInput.checked;
+    let title = titleInput.value;
+    let author = authorInput.value;
+    let pages = pagesInput.value;
+    let read = bookInput.checked;
 
-    newBook = new Book(title, author, pages, read);
+    let newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
 }
 
@@ -35,6 +40,17 @@ function addBookToLibrary() {
 
 
 // show the form
+addBook.addEventListener("click", () => {
+    formModal.showModal();
+})
 
+// close the form and adds book to the library
+submitBtn.addEventListener("click", () => {
+    addBookToLibrary();
+    formModal.close();
+});
 
-// close the form
+// closes the form but there's no submission
+cancelBtn.addEventListener("click", () => {
+    formModal.close();
+})

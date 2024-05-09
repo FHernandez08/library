@@ -45,3 +45,100 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+body {
+  font-family: "Ubuntu Sans", sans-serif;
+  background-color: rgb(177, 156, 217);
+}
+
+/* header styling */
+header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo svg {
+  width: 75px;
+  height: 75px;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+header button {
+  position: absolute;
+  right: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  padding: 15px;
+}
+
+/* form designs */
+dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  gap: 25px;
+}
+
+form h3 {
+  text-decoration: underline;
+}
+
+.title,
+.author,
+.pages {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 700;
+}
+
+form .book-status {
+  display: flex;
+  gap: 10px;
+}
+
+form .modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cancel-button,
+#submit-button {
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#cancel-button {
+  background-color: #c41e3a;
+}
+
+#submit-button {
+  background-color: #3a914e;
+}
