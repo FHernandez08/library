@@ -142,3 +142,61 @@ form .modal-buttons {
 #submit-button {
   background-color: #3a914e;
 }
+
+/* styling for the cards */
+.cards {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.new-card {
+  width: 300px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border: solid;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+}
+
+.card-title,
+.card-author,
+.card-pages,
+.card-read-status {
+  font-weight: 700;
+}
+
+.read-btn,
+.not-read-btn {
+  border: none;
+  width: 100px;
+}
+
+.read-btn {
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+
+.not-read-btn {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.remove-btn {
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: silver;
+  color: white;
+}
